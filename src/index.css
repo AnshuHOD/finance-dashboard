@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #F6F8FA;
+    --bg-card: #FFFFFF;
+    --bg-hover: #F3F4F6;
+    --accent-green: #3FB950;
+    --accent-red: #F85149;
+    --accent-blue: #58A6FF;
+    --accent-gold: #D29922;
+    --text-primary: #1F2328;
+    --text-secondary: #636C76;
+    --border: #D0D7DE;
+  }
+
+  /* Dark mode variables */
+  .dark {
+    --bg-primary: #0D1117;
+    --bg-card: #161B22;
+    --bg-hover: #1C2128;
+    --text-primary: #E6EDF3;
+    --text-secondary: #8B949E;
+    --border: #30363D;
+  }
+
+  body {
+    @apply transition-colors duration-200;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-accent-blue hover:bg-opacity-80 text-white rounded-md font-medium transition-all;
+  }
+  
+  .card {
+    @apply bg-primary-card border border-primary-border rounded-lg overflow-hidden transition-all;
+  }
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
