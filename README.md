@@ -4,6 +4,11 @@ A modern, high-performance personal finance dashboard built with **React**, **Vi
 
 ![Finance Dashboard](https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000)
 
+## 🔗 Links
+
+- **Live Demo**: [https://finance-dashboard-xi-flame.vercel.app](https://finance-dashboard-xi-flame.vercel.app)
+- **GitHub Repository**: [https://github.com/AnshuHOD/finance-dashboard](https://github.com/AnshuHOD/finance-dashboard)
+
 ## ✨ Key Features
 
 - **📊 Comprehensive Overview**: Visualize your financial health with summary cards (Balance, Income, Expenses) and interactive charts.
